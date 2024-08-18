@@ -1,0 +1,24 @@
+package ejercicio.pkg4.pkg2;
+
+public class LocalComercial extends Local {
+    
+    protected static double valorArea = 3000000;
+    
+    protected String centroComercial;
+    
+    public LocalComercial(int identificadorInmobilario, int area, String direccion, tipo tipoLocal, String centroComercial) {
+        
+        super(identificadorInmobilario, area, direccion, tipoLocal);
+        this.centroComercial = centroComercial;
+        
+    }
+    
+    void imprimir() {
+        
+        super.imprimir();
+        System.out.println("Centro comercial = " + centroComercial);
+        System.out.println();
+        
+    }
+    
+}
